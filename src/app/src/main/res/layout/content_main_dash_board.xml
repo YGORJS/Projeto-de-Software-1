@@ -1,0 +1,148 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+        <TextView
+            android:id="@+id/novo_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:text="@string/novo_usuario"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:onClick="selecionarOpcao"
+
+            />
+
+        <TextView
+            android:id="@+id/novo_equip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:text="@string/novo_equip"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:onClick="selecionarOpcao"
+            />
+
+
+
+        <TextView
+            android:id="@+id/novo_exer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/novo_usuario"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="24dp"
+            android:clickable="true"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:text="@string/novo_exer"
+            android:onClick="selecionarOpcao"
+
+            />
+
+
+        <TextView
+            android:id="@+id/nova_assoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="32dp"
+            android:clickable="true"
+            android:text="@string/nova_assoc"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:onClick="selecionarOpcao"
+
+            />
+
+
+
+    <TextView
+        android:id="@+id/atlz_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:text="@string/cons_usuario"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_below="@+id/novo_equip"
+        android:onClick="selecionarOpcao"
+
+        />
+
+
+
+
+
+    <TextView
+        android:id="@+id/atlz_equip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="48dp"
+        android:clickable="true"
+        android:text="@string/cons_equip"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_below="@+id/atlz_usuario"
+        android:onClick="selecionarOpcao"
+
+        />
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/atlz_exer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="56dp"
+        android:clickable="true"
+        android:text="@string/cons_exer"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_below="@+id/atlz_usuario"
+        android:onClick="selecionarOpcao"
+
+        />
+
+
+        <TextView
+            android:id="@+id/atlz_assoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="64dp"
+            android:clickable="true"
+            android:text="@string/cons_assoc"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_below="@+id/novo_usuario"
+            android:onClick="selecionarOpcao"
+
+            />
+
+
+</LinearLayout>

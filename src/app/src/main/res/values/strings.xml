@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">AcadSystem</string>
+    <string name="nome">Nome</string>
+    <string name="descricao">Descrição</string>
+    <string name="status">Status</string>
+    <string name="ativo">Ativo</string>
+    <string name="inativo">Inativo</string>
+    <string name="marca">Marca</string>
+
+    <string name="novo_usuario">Novo Usuário</string>
+    <string name="atlz_usuario">Atualizar Usuário</string>
+    <string name="cons_usuario">Consultar Usuários</string>
+
+    <string name="novo_exer">Novo Exercício</string>
+    <string name="atlz_exer">Atualizar Exercício</string>
+    <string name="cons_exer">Consultar Exercícios</string>
+
+    <string name="novo_equip">Novo Equipamento</string>
+    <string name="atlz_equip">Atualizar Equipamento</string>
+    <string name="cons_equip">Consultar Equipamentos</string>
+
+    <string name="nova_assoc">Nova Associação</string>
+    <string name="atlz_assoc">Atualizar Associação</string>
+    <string name="cons_assoc">Consultar Associações</string>
+
+
+</resources>
