@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">AcadSystem</string>
-    <string name="nome">Nome</string>
-    <string name="descricao">Descrição</string>
-    <string name="status">Status</string>
-    <string name="ativo">Ativo</string>
-    <string name="inativo">Inativo</string>
-    <string name="marca">Marca</string>
-</resources>
