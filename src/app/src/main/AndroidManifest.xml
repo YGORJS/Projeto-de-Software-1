@@ -13,22 +13,13 @@
         android:theme="@style/AppTheme" >
 
 
-
         <activity android:name=".Interface.MainActivityEquipamentoCad" >
-            <!--<intent-filter>
-             <action android:name="android.intent.action.MAIN" />
 
-             <category android:name="android.intent.category.LAUNCHER" />
-         </intent-filter>-->
      </activity>
 
 
       <activity android:name=".Interface.MainActivityUsuarioCad" >
-          <!--<intent-filter>
-              <action android:name="android.intent.action.MAIN" />
 
-              <category android:name="android.intent.category.LAUNCHER" />
-          </intent-filter>-->
         </activity>
 
        <activity android:name=".Interface.MainActivityExercicioCad" >
@@ -36,11 +27,7 @@
         </activity>
 
         <activity android:name=".Interface.MainActivityAssociacaoCad">
-            <!--<intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
 
         </activity>
         <activity android:name=".Interface.MainActivityDashBoard">
@@ -59,6 +46,35 @@
         </activity>
 
         <activity android:name=".Interface.MainActivityAssociacaoAlter">
+
+        </activity>
+
+
+        <activity android:name=".Interface.MainActivityUsuarioCons">
+
+
+        </activity>
+
+        <activity android:name=".Interface.MainActivityUsuarioAlter">
+
+
+        </activity>
+
+        <activity android:name=".Interface.MainActivityExercicioCons">
+
+
+        </activity>
+
+        <activity android:name=".Interface.MainActivityExercicioAlter">
+
+
+        </activity>
+
+        <activity android:name=".Interface.MainActivityEquipamentoCons">
+
+
+        </activity>
+        <activity android:name=".Interface.MainActivityEquipamentoAlter">
 
         </activity>
 

@@ -4,7 +4,6 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
 
 import br.com.ygorjs.acadsystem.Conexao.Conexao;
 
@@ -27,11 +26,11 @@ public class RepoExercicio {
 
         db = banco.getWritableDatabase();
 
-        values.put(Conexao.NOME,nome);
-        values.put(Conexao.STATUS,status);
-        values.put(Conexao.DESCRICAO,descricao);
+        values.put(Conexao.NOME_EXER,nome);
+        values.put(Conexao.STATUS_EXER,status);
+        values.put(Conexao.DESCRICAO_EXER,descricao);
 
-        resultado = db.insert(Conexao.TABELA,null,values);
+        resultado = db.insert(Conexao.TAB_EXER,null,values);
 
 
         return this.verificaResultado(resultado);
@@ -51,12 +50,14 @@ public class RepoExercicio {
 
         Cursor cursor;
         String[] campos = {
-                banco.ID,
-                banco.NOME
+                banco.ID_EXER,
+                banco.NOME_EXER,
+                banco.DESCRICAO_EXER,
+                banco.STATUS_EXER
         };
 
         db = banco.getReadableDatabase();
-        cursor = db.query(banco.TABELA, campos, null, null, null, null, null, null);
+        cursor = db.query(banco.TAB_EXER, campos, null, null, null, null, null, null);
 
                 if(cursor != null){
                     cursor.moveToFirst();
@@ -65,19 +66,45 @@ public class RepoExercicio {
         return cursor;
     }
 
+
+
+    public Cursor carregaExerById(int id){
+
+        Cursor cursor;
+        String [] campos = {
+
+                banco.ID_EXER,
+                banco.NOME_EXER,
+                banco.DESCRICAO_EXER,
+                banco.STATUS_EXER
+        };
+
+        String where = Conexao.ID_EXER+" = "+id;
+        db = banco.getReadableDatabase();
+        cursor = db.query(Conexao.TAB_EXER,campos,where,null,null,null,null,null);
+
+        if(cursor != null)
+            cursor.moveToFirst();
+
+        db.close();
+        return cursor;
+    }
+
+
+
     public  void alterarExercicio(int id, String nome, String descricao, String status){
 
         ContentValues values;
         String where;
         db = banco.getWritableDatabase();
-        where = Conexao.ID+" = "+id;
+        where = Conexao.ID_EXER +" = "+id;
 
         values = new ContentValues();
-        values.put(Conexao.NOME,nome);
-        values.put(Conexao.STATUS,status);
-        values.put(Conexao.DESCRICAO,descricao);
+        values.put(Conexao.NOME_EXER,nome);
+        values.put(Conexao.STATUS_EXER,status);
+        values.put(Conexao.DESCRICAO_EXER,descricao);
 
-        db.update(Conexao.TABELA,values,where,null);
+        db.update(Conexao.TAB_EXER,values,where,null);
         db.close();
 
     }

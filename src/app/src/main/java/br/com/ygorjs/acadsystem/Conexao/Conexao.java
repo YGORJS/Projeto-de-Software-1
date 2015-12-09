@@ -1,6 +1,5 @@
 package br.com.ygorjs.acadsystem.Conexao;
 
-import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -13,15 +12,15 @@ public class Conexao extends SQLiteOpenHelper {
 
     public static final String NOME_BANCO = "AcadSystem.db";
 
-    public static final String TABELA = "Exercicio";
-    public static final String ID = "_id";
-    public static final String NOME = "nome";
-    public static final String DESCRICAO = "descricao";
-    public static final String STATUS = "status";
+    public static final String TAB_EXER = "Exercicio";
+    public static final String ID_EXER = "_id";
+    public static final String NOME_EXER = "nome";
+    public static final String DESCRICAO_EXER = "descricao";
+    public static final String STATUS_EXER = "status";
 
     public static final String TAB_USUR = "Usuario";
-    public static final String ID_USUR = "_id_usur";
-    public static final String NOME_USUR = "nome_usur";
+    public static final String ID_USUR = "_id";
+    public static final String NOME_USUR ="nome_usur";
     public static final String TIPO_USUR = "tipo_usur";
     public static final String SEXO_USUR = "sexo_usur";
     public static final String ENDERECO_USUR = "endereco_usur";
@@ -36,7 +35,7 @@ public class Conexao extends SQLiteOpenHelper {
 
 
     public static final String TAB_EQUIP = "Equipamento";
-    public static final String ID_EQUIP = "_id_equip";
+    public static final String ID_EQUIP = "_id";
     public static final String NOME_EQUIP = "nome_equip";
     public static final String DESCRICAO_EQUIP = "descricao_equip";
     public static final String STATUS_EQUIP = "status_equip";
@@ -50,7 +49,7 @@ public class Conexao extends SQLiteOpenHelper {
     public static final String NOME_EQUIP_ASSOC="nome_equip_assoc";
 
 
-    public static final int VERSION = 4;
+    public static final int VERSION = 6;
 
     public Conexao(Context context) {
         super(context, NOME_BANCO, null, VERSION);
@@ -62,11 +61,11 @@ public class Conexao extends SQLiteOpenHelper {
 
 
         //criando tabela  de exercicios
-        String sql = "CREATE TABLE "+TABELA+" ( "
-                +ID+" INTEGER PRIMARY KEY AUTOINCREMENT,"
-                +NOME+" TEXT, "
-                +DESCRICAO+" TEXT, "
-                +STATUS+" TEXT )";
+        String sql = "CREATE TABLE "+ TAB_EXER +" ( "
+                + ID_EXER +" INTEGER PRIMARY KEY AUTOINCREMENT,"
+                + NOME_EXER +" TEXT, "
+                + DESCRICAO_EXER +" TEXT, "
+                + STATUS_EXER +" TEXT )";
 
         db.execSQL(sql);
 
@@ -113,7 +112,7 @@ public class Conexao extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
-        db.execSQL("DROP TABLE IF EXISTS  "+this.TABELA);
+        db.execSQL("DROP TABLE IF EXISTS  "+this.TAB_EXER);
         db.execSQL("DROP TABLE IF EXISTS  "+this.TAB_EQUIP);
         db.execSQL("DROP TABLE IF EXISTS  "+this.TAB_USUR);
         db.execSQL("DROP TABLE IF EXISTS  "+this.TAB_ASSC);

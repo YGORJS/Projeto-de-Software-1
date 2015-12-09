@@ -37,15 +37,23 @@ public class ControladorUsuario {
         this.resultado = crud.incluirUsuario(nomeI,tipo_UsurI,sexoI,enderecoI,bairroI,cidadeI,estadoI,statusI,loginI,senhaI);
         Toast.makeText(context.getApplicationContext(), resultado, Toast.LENGTH_LONG).show();
 
-       // this.fieldEmpty(nome,descricao,status);
+        this.fieldEmpty(nome,tipo_Usur,sexo,endereco,bairro,cidade,estado,status,login,senha);
 
     }
 
-    private void fieldEmpty(EditText nome, EditText descricao,EditText status){
+    private void fieldEmpty(EditText nome, EditText tipoUsur,EditText sexo,EditText endereco, EditText bairro, EditText cidade, EditText estado, EditText status, EditText login , EditText senha ){
+
 
         nome.setText("");
-        descricao.setText("");
+        tipoUsur.setText("");
+        sexo.setText("");
+        endereco.setText("");
+        bairro.setText("");
+        cidade.setText("");
+        estado.setText("");
         status.setText("");
+        login.setText("");
+        senha.setText("");
     }
 
 }

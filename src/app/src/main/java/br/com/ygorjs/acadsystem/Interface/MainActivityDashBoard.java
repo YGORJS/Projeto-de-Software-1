@@ -71,6 +71,21 @@ public class MainActivityDashBoard extends AppCompatActivity {
 
                 startActivity(new Intent(this,MainActivityAssociacaoCons.class));
                 break;
+
+            case "Consultar Usuários":
+                startActivity(new Intent(this, MainActivityUsuarioCons.class));
+
+                break;
+
+            case "Consultar Exercícios":
+
+                startActivity(new Intent(this, MainActivityExercicioCons.class));
+                break;
+
+            case "Consultar Equipamentos":
+
+                startActivity(new Intent(this, MainActivityEquipamentoCons.class));
+                break;
         }
     }
 

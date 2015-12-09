@@ -22,15 +22,15 @@ public class MainActivityAssociacaoCad extends AppCompatActivity {
     ControladorAssociacao crud = new ControladorAssociacao();
 
     private static final String[] USUARIOS = new String[] {
-            "João", "José", "Ygor", "Maria", "Antônio","Francisco","Jarley Nobrega","Bruna","Bruno","Joana"
+            "João", "José", "Ygor", "Maria", "Antônio","Francisco","Jarley Nobrega","Bruna","Bruno","Joana","Marcos Alberto","Eduardo Calabria","Carlos Eduardo","Lara Dantas","Vitor","Ivna Valença"
     };
 
     private static final String[] EXERCICIOS = new String[]{
-            "Exer1","Musculação","Marinheiro","Abdôminal","Exer2","Exer3","Exer4","Exer5"
+            "Exer1","Musculação","Marinheiro","Abdominal","Exer2","Exer3","Exer4","Exer5","Elevação de pernas","Frontal","Rosca inversa","Rosca martelo"
     };
 
     private static final String[]EQUIPAMENTOS = new String[]{
-            "Equip1","Bicicleta","Esteira","Equip2","Equip3","Equip4","Equip5"
+            "Equip1","Bicicleta","Esteira","Equip2","Equip3","Equip4","Equip5","Leg Press","Supino Reto","Puxador costas"
     };
 /////////////////////////////////////////////////////////////
     protected void onCreate(Bundle saveInstanceBundle){

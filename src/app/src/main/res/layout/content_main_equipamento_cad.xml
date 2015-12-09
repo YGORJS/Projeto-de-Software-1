@@ -101,7 +101,7 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Atualizar"
+                    android:text="Cadastrar"
                     android:id="@+id/button_Cad_Equip"
                     android:layout_below="@+id/et_marca_equip"
                     android:layout_alignParentLeft="true"
